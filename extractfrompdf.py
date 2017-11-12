@@ -22,5 +22,6 @@ for blob in images:
     text = pytesseract.image_to_string(img , lang ="eng")
     converted_text.append(text)
 
+
 for page in converted_text:
     print page
